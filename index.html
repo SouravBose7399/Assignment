@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- react cdn link -->
+     <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+     <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    
+    <!-- JSX cdn link -->
+     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="root"></div>
+</body>
+<script type="text/javascript">
+    const node=document.getElementById("root")
+    const element=React.createElement("p",{
+    className : "Paragraph",
+    children: "I am learning React. My life is getting better."
+})
+
+ReactDOM.render(element,node) //to append element in node
+</script>
+</html>
